@@ -99,7 +99,7 @@ class DmallBot(commands.Bot):
         intents.guilds = True
         intents.dm_messages = True
         
-        super().__init__(command_prefix="+", intents=intents)
+        super().__init__(command_prefix="+", intents=intents, help_command=None)
         
     async def on_ready(self):
         print(f'✅ Bot connecté en tant que {self.user}')
